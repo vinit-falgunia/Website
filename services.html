@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+	<head>
+	<style>
+	.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: calc(100vh - 340px) !important;
+    overflow-y: auto;
+}
+.modal-content {
+  height: auto !important;
+  max-height: calc(200vh - 340px) !important;
+}
+</style>
+		<!-- Meta Tag -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name='copyright' content='bonik'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Site Title -->
+		<title>ADvibooks - Accounting And Financial Services </title>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" type="img/favicon.ico" href="img/favicon.ico">
+		
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet">   
+		
+		<!-- Theme Stylesheet -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/cube-portfolio.min.css">
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<link rel="stylesheet" href="css/maginific-popup.min.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/animate-text.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		
+		<!-- Theme Default CSS -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		
+		<!-- Theme Colors CSS -->
+		<!-- <link rel="stylesheet" href="css/colors/color1.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color2.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color3.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color4.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color5.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color6.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color7.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color8.css"> -->
+		
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->	
+	</head>
+
+	<body>
+	<!--[if IE]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	 <![endif]-->
+		
+		<!-- Preloader-Area --> 
+		<div class="preloader-area">
+			<div class="sk-cube-grid">
+				<div class="sk-cube sk-cube1"></div>
+				<div class="sk-cube sk-cube2"></div>
+				<div class="sk-cube sk-cube3"></div>
+				<div class="sk-cube sk-cube4"></div>
+				<div class="sk-cube sk-cube5"></div>
+				<div class="sk-cube sk-cube6"></div>
+				<div class="sk-cube sk-cube7"></div>
+				<div class="sk-cube sk-cube8"></div>
+				<div class="sk-cube sk-cube9"></div>
+			</div>
+		</div>
+		<!-- End-Preloader-Area --> 
+
+		<!-- Topbar -->
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2 col-12">
+						<div class="topbar-address">
+							<ul>
+								<li><a href="#"><i class="fa fa-phone"></i><span>Phone:</span> +91 9624682524</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i><span>Email:</span> info@advibooks.com</a></li>
+								<li><a href="#"><i class="fa fa-map-marker"></i><span>Location:</span> Ahmedabad, Gujarat India  </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Topbar -->
+	
+		<!-- Header Start -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="header-inner-top">
+							<div class="header-inner">
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-12">
+										<!-- Logo -->
+										<div class="logo">
+											<a class="logo-1" href="index.html"><img src="img/logo.png" alt="#"></a>
+										</div>
+										<!-- End-Logo -->
+										<div class="mobile-nav"></div>
+									</div>
+									<div class="col-lg-10 col-md-9 col-12">
+										<div class="main-menu-top">
+											<div class="main-menu">
+												<div class="navbar">
+													<div class="nav-item">
+														<!-- Main-Menu -->
+														<ul class="nav-menu mobile-menu navigation">
+															<li><a href="index.html">Home</a></li>
+															<li class="active"><a href="services.html">Services</a></li>
+															<li><a href="team.html">Team</a></li>
+															<li><a href="about-us.html">About Us</a></li>
+															<!--<li><a href="testimonials.html">Testimonials</a></li>-->
+															<li><a href="faq.html">Faq's</a></li>
+															<li><a href="contact.html">Contact</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Menu-Right -->
+											<div class="menu-right">
+												<a href="contact.html" class="theme-btn">get a quote</a>
+											</div>
+											<!-- End-Menu-Right -->
+										</div>
+									</div>
+								</div>	
+							</div>	
+						</div>	
+					</div>	
+				</div>	
+			</div>
+		</header>
+		<!-- End Header -->
+	
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs" style="background-image:url('img/breadcrumbs-bg.jpg')">
+			<div class="container">
+				<div class="row">
+					<!-- Breadcrumbs-Content -->
+					<div class="col-lg-7 col-md-7 col-12">
+						<div class="breadcrumbs-content">
+							<h2>Services</h2>
+							<p>Comprehensive business solutions including Accounting, Payroll Processing, Back Office Support, Virtual CFO, and Tax Preparation services.</p>	
+						</div>
+					</div>
+					<!-- Breadcrumbs-Menu -->
+					<div class="col-lg-5 col-md-5 col-12">
+						<div class="breadcrumbs-menu">
+							<ul>
+								<li><a href="index.html">Home</a><i class="fa fa-angle-double-right"></i></li>
+								<li class="active"><a href="services.html">Services</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+		
+		<!-- Service Area -->
+		<section class="service-area archive">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+						<div class="section-title">
+							<h6>Services</h6>
+							<h3>Our Services</h3>
+							<div class="line-bot"></div>
+							<p>Comprehensive business solutions including Accounting, Payroll Processing, Back Office Support, Virtual CFO, and Tax Preparation services.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-duration="1s">
+						<!-- Single Service -->
+						<div class="single-service">
+							<div class="service-head">
+								<div class="service-img">
+									<img src="img/accounting_services.png" alt="#"> 
+									<i class="fa fa-edit"></i>
+								</div>
+							</div>
+							<div class="service-content">
+								<h4>Accounting Services</h4>
+								<p>Running a business and managing finances simultaneously can be overwhelming. Our accounting outsourcing services are designed to support businesses of all sizes and industries, ensuring your financial needs are met efficiently. With dedicated bookkeepers, we handle all your accounting tasks, from sales and purchase invoices to bank transactions, while providing tailor-made solutions to suit your specific business needs.. </p>
+							</div>
+							<div class="service-bottom">
+								<a href="#" data-toggle="modal" data-target="#infoModalAS"><i class="fa fa-chevron-right"></i></a>
+							</div>	
+							<!-- Modal -->
+							<div class="modal fade" id="infoModalAS" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Accounting Services</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>You have a business to run and also manage finances side by side. We have got you covered with our accounting outsourcing services  in any business despite its size and industry. If anyone wants to run its business successfully and grow by leaps should have accounting in place. With a dedicated bookkeeper at our disposal, we ensure that all your accounting requirements are met. Just keep us in loop of all your business financial transactions, send us the invoices of sales, purchases and bank we will handle the rest. We are specialised in offering book keeping to small, mid-size businesses who cannot afford to pay full time accountant.    
+								Our accounting outsourcing services are tailor-made according to the business and industry you are in. This way, we can ensure that you get the right kind of services and pay for the ones that your business needs. 
+								</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<!-- End Single Service -->
+					</div>
+					
+					<div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-duration="2s">
+						<!-- Single Service -->
+						<div class="single-service">
+							<div class="service-head">
+								<div class="service-img">
+									<img src="img/payrollprocessing.png" alt="#"> 
+									<i class="fa fa-eye"></i>
+								</div>
+							</div>
+							<div class="service-content">
+								<h4>Payroll Processing</h4>
+								<p>Managing payroll can be a complex and time-consuming task, but ADvibooks simplifies it for you. We offer professional payroll services that save time, reduce errors, and ensure full compliance with tax and labor regulations. From daily payroll to month-end payslips, withholdings, and timely payments, our tailored solutions are designed for businesses of all sizes. </p>
+							</div>
+							<div class="service-bottom">
+								<a href="#" data-toggle="modal" data-target="#infoModal"><i class="fa fa-chevron-right"></i></a>
+							</div>
+							
+							<!-- Modal -->
+							<div class="modal fade" id="infoModal" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Payroll Processing</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>
+									Managing payroll can be time-consuming and complex, but it doesn’t have to be. At ADvibooks, we offer professional payroll services designed to save you time, reduce errors, and ensure compliance with tax and labour regulations. Whether you’re a small business or a growing enterprise, we provide seamless solutions tailored to your needs.
+								<br/>
+									We provide daily payroll, calculating month end payslips, withholdings and providing payments on time. 
+								</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<!-- Single Service -->
+					<div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-duration="2s">
+						<div class="single-service">
+							<div class="service-head">
+								<div class="service-img">
+									<img src="img/backoffice.png" alt="#"> 
+									<i class="fa fa-lightbulb-o"></i>
+								</div>
+							</div>
+							<div class="service-content">
+								<h4>Back Office Support</h4>
+								<p>A well-organized back office is key to business success, and at ADvibooks, we provide comprehensive support services that allow you to focus on growth. From financial management and data processing to payroll and compliance, we handle the essential administrative tasks that keep your operations running smoothly. Our back-office solutions are designed to improve efficiency and save you time, so you can focus on what matters most.. </p>
+							</div>
+							<div class="service-bottom">
+								<a href="#" data-toggle="modal" data-target="#infoModalBOS"><i class="fa fa-chevron-right"></i></a>
+							</div>	
+							<!-- Modal -->
+							<div class="modal fade" id="infoModalBOS" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Back Office Support</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>Behind every successful business is a well-organized back office. At ADvibooks, we provide comprehensive back-office support services that allow you to focus on your core business activities while we handle the administrative and operational tasks. From financial management to data processing, our services are designed to streamline your operations and improve efficiency.
+								<br/>
+Back office support refers to the essential administrative and support functions that keep your business running smoothly, including bookkeeping, receivables / payables follow up, payroll processing, and compliance management. While these tasks are critical, they often require significant time and resources. That’s where we come in.
+								</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Single Service -->
+					<div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-duration="1s">
+						<!-- Single Service -->
+						<div class="single-service">
+							<div class="service-head">
+								<div class="service-img">
+									<img src="img/virtual_cfo.png" alt="#"> 
+									<i class="fa fa-edit"></i>
+								</div>
+							</div>
+							<div class="service-content">
+								<h4>Virtual CFO</h4>
+								<p>At ADvibooks, we provide affordable Virtual CFO services on a part-time or project basis, offering expert financial support remotely. Our certified Virtual CFOs analyze your business’s financial health, provide strategic advice, and help maximize resources for informed decision-making. Perfect for small businesses, freelancers, startups, non-profits, and individuals with complex financial needs, our services streamline financial management and help plan for future success.. </p>
+							</div>
+							<div class="service-bottom">
+								<a href="#" data-toggle="modal" data-target="#infoModalVCFO"><i class="fa fa-chevron-right"></i></a>
+							</div>	
+							<!-- Modal -->
+							<div class="modal fade" id="infoModalVCFO" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Virtual CFO</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>Are you in need of an experienced financial professional on a part–time or Project basis? With Advibooks, it is affordable to get Virtual CFO support for your business. You can hire a virtual CFO from India to monitor the financial health of your business remotely. The certified CFO analyzes and provides strategic advice on your businesses. The remote CFO helps them maximize your resources and make informed financial decisions. Further, the virtual CFO also manages functions such as accounts and ledgers to make strategies for future finances. 
+Our virtual CFO services are perfect for:
+•	Small and medium-sized business owners
+•	Freelancers and entrepreneurs
+•	Startups
+•	Non-profits
+•	Individuals with complex financial needs
+</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-duration="2s">
+						<!-- Single Service -->
+						<div class="single-service">
+							<div class="service-head">
+								<div class="service-img">
+									<img src="img/tax.png" alt="#"> 
+									<i class="fa fa-eye"></i>
+								</div>
+							</div>
+							<div class="service-content">
+								<h4>Tax Prepares</h4>
+								<p>We offer a tailored approach in fulfilling the needs of each client through our range of fully integrated taxation, compliance and planning services. . </p>
+							</div>
+							<div class="service-bottom">
+								<a href="#" data-toggle="modal" data-target="#infoModalTAX"><i class="fa fa-chevron-right"></i></a>
+							</div>	
+							<!-- Modal -->
+							<div class="modal fade" id="infoModalTAX" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Tax Prepares</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+								</div>
+								<div class="modal-body">
+								<p>At ADvibooks, our team is the backbone of our success. Comprised of highly skilled accountants, tax specialists, and financial advisors, we bring a wealth of experience and expertise to every client we serve. We are passionate about helping you achieve financial clarity and success. We offer a tailored approach in fulfilling the needs of each client through our range of fully integrated taxation, compliance and planning services. 
+</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<!-- Single Service -->
+					<div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-duration="2s" style="display:none;">
+						<div class="single-service">
+							<div class="service-head">
+								<div class="service-img">
+									<img src="https://via.placeholder.com/120x120" alt="#"> 
+									<i class="fa fa-lightbulb-o"></i>
+								</div>
+							</div>
+							<div class="service-content">
+								<h4>Digital Marketing</h4>
+								<p>There is now an abundance of readable dummy texts. These are usually used when a text is required purely. </p>
+							</div>
+							<div class="service-bottom">
+								<a href="contact.html"><i class="fa fa-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</section>	
+		<!-- End Service Area -->
+	
+		<!-- Testimonial-Area -->
+		<section class="testimonial-area">
+			<!-- Testimonial main -->
+			<div class="testimonial-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<!-- Testimonial-Slider -->
+							<div class="testimnial-slider">
+								<!-- Single Testimonial -->
+								<div class="testimonial-item">
+									<div class="row">
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimnial-left">
+												<div class="testimonial-head">
+													<img src="https://via.placeholder.com/150x150" alt="#"> 
+												</div>
+												<div class="testimonial-bottom">
+													<h6>Siddharth Shah</h6>
+													<p>Freelancer</p>
+												</div>
+												<!-- Social Links -->
+												<ul class="testimonial-social">
+													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-6 col-12">
+											<div class="testimonial-right">
+												<p>Wonderful team and support. Good knowledge of Accounts & Finance.</p>
+												<div class="stars">
+													<ul>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End Single Testimonial -->
+								<!-- Single Testimonial -->
+								<div class="testimonial-item">
+									<div class="row">
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimnial-left">
+												<div class="testimonial-head">
+													<img src="https://via.placeholder.com/150x150" alt="#"> 
+												</div>
+												<div class="testimonial-bottom">
+													<h6>Emily R</h6>
+													<p>Digital Marketer</p>
+												</div>
+												<!-- Social Links -->
+												<ul class="testimonial-social">
+													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-6 col-12">
+											<div class="testimonial-right">
+												<p>The team at ADvibooks is incredibly responsive. Whenever I have a question or need assistance, they reply almost instantly with clear and helpful solutions. Their promptness gives me confidence that my finances are always in good hands.</p>
+												<div class="stars">
+													<ul>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End Single Testimonial -->
+								<!-- Single Testimonial -->
+								<div class="testimonial-item">
+									<div class="row">
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimnial-left">
+												<div class="testimonial-head">
+													<img src="https://via.placeholder.com/150x150" alt="#"> 
+												</div>
+												<div class="testimonial-bottom">
+													<h6>Kathleen</h6>
+													<p>Seo Expert</p>
+												</div>
+												<!-- Social Links -->
+												<ul class="testimonial-social">
+													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-6 col-12">
+											<div class="testimonial-right">
+												<p>The team at Advibooks has been instrumental in keeping our finances organized. Their attention to detail and timely reports have saved us countless hours and headaches. I can finally focus on growing my business, knowing our books are in great hands.</p>
+												<div class="stars">
+													<ul>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End Single Testimonial -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Testimonial Main -->
+		</section>
+		<!-- End Testimonial Area -->
+	
+		<!-- Subscribe Area -->
+		<section class="subscribe-area" style="background-image: url(https://via.placeholder.com/1600x250); display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-12 wow fadeInLeft" data-wow-duration="1s">
+						<div class="subscribe-content">
+							<h2>Subscribe & stay updated</h2>
+							<p>Posuere nam natoque nec rhoncus malesuad phasel ante.</p>
+						</div>
+						<form class="form-main">
+							<div class="form-group">
+								<input type="email" name="Email" placeholder="Your email adress" required="required">
+								<button type="submit" class="theme-btn">Subscribe Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Subscribe Area -->
+		<br/>
+		<!-- Footer Area -->
+		<footer class="footer-area" style="background-image:url('img/footer-bg.jpg')">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<!-- Single Widget -->
+							<div class="single-widget footer-about">
+								<div class="footer-logo">
+									<a class="logo" href="#">
+										<img src="img/logo.png" alt="#">
+									</a>
+								</div>
+								<div class="about-description">
+									<p>We are dedicated to providing exceptional accounting and financial services that empower businesses and individuals to thrive..</p>
+								</div>
+								<!-- Quick Link Box -->	
+								<div class="f-contact-box">
+									<div class="box-icon"><i class="fa fa-headphones"></i></div>
+									<div class="contact-text">
+										<p>Talk To Our Support</p>
+										<h5>+91 9624682524</h5>
+									</div>
+								</div>
+							</div>
+							<!-- End Single Widget -->
+						</div>
+						<div class="col-lg-2 col-md-6 col-12">
+							<!-- Quick Links -->
+							<div class="single-widget f-links">
+								<h3 class="widget-title">Quick Links</h3>
+								<ul>
+									<li><a href="about-us.html"><i class="fa fa-angle-double-right"></i>About us</a></li>
+									<li><a href="services.html"><i class="fa fa-angle-double-right"></i>Our Services</a></li>
+									<li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Single-Widget -->
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Latest Post -->
+							<div class="single-widget">
+								<h3 class="widget-title">Latest News</h3>
+								<div class="widget-post">
+									<div class="post-img">
+										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+									</div>
+									<div class="post-content">
+										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+									</div>
+								</div>
+								<div class="widget-post">
+									<div class="post-img">
+										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+									</div>
+									<div class="post-content">
+										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Single-Widget -->
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-widget">
+								<h3 class="widget-title">Contact</h3>
+								<!-- Footer Contact -->
+								<div class="footer-contact">
+									<ul class="contact-bottom">
+										<li><a href="#"><i class="fa fa-map-marker"></i>Ahmedabad, Gujarat India</a></li>
+										<li><a href="#"><i class="fa fa-phone"></i>+91 9624682524</a></li>
+										<li><a href="#"><i class="fa fa-envelope"></i>info@advibooks.com</a></li>
+									</ul>
+								</div>
+								<!-- Footer Social -->
+								<div class="f-social">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End-Single-Widget -->
+					</div>
+				</div>
+			</div>
+			<!-- End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="copyright-text">
+								<p>Copyright © 2024 ADvibooks Pvt Ltd.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12" style="display:none;">
+							<div class="footer-bottom-img text-right">
+								<img src="img/payment-img.png" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Footer Copyright -->
+		</footer>
+		<!-- End Footer Area -->		
+		
+		<!-- Jquery Plugin JS -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/modernizer.min.js"></script>
+		<script src="js/magnific-popup.min.js"></script>
+		<script src="js/cube-portfolio.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery-fancybox.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script src="js/steller.min.js"></script>
+		<script src="js/easing.min.js"></script>
+		<script src="js/jquery.scrollUp.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- End Jquery Plugin JS -->
+	</body>
+</html>
