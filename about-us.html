@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 	<head>
+	<style>
+	.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: calc(100vh - 340px) !important;
+    overflow-y: auto;
+}
+.modal-content {
+  height: auto !important;
+  max-height: calc(200vh - 340px) !important;
+}
+</style>
 		<!-- Meta Tag -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -339,12 +373,12 @@
 						<!-- Single Team -->
 						<div class="single-team text-center">
 							<div class="team-img">
-								<img src="img/Team1.png" alt="#">
+								<img src="img/Team1.png" alt="Dipika Shah">
 							</div>
 							<div class="team-bottom">
 								<!-- Team content -->
 								<div class="team-content">
-									<h4>Dipika Shah </h4>
+									<h4>Dipika Shah</h4>
 									<p>CEO</p>
 								</div>
 								<!-- Team social -->
@@ -352,12 +386,37 @@
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/dipika-shah-216766160" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#" data-toggle="modal" data-target="#infoModalTeam1"><i class="fa fa-info"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
+						<!-- Modal -->
+							<div class="modal fade" id="infoModalTeam1" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Dipika Shah</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>
+									Dipika was part of Deloitte Haskins and Sells LLP in capacity of Manager. She has experience of 14 years and have advised ace multinational companies in Accounting, payroll processing, Internal controls, International tax, domestic taxation, Expatriate services having global movement of employees.
+								<br/>
+									She has worked with some of the marquee clients engaged in tyre manufacturing, Automobile manufacturing, pharmaceuticals, Engineering service company, construction company, dairy companies, Chemical manufacturing.  
+								<br/>
+								She has assisted Permanent establishment of US company in India, Subsidiaries of companies headquartered at USA, Japan, France, China
+								</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>
 						<!-- End Single Team -->
 					</div>
 					<!-- Single-Team -->
@@ -365,7 +424,7 @@
 						<!-- Single Team -->
 						<div class="single-team text-center">
 							<div class="team-img">
-								<img src="img/Team2.png" alt="#">
+								<img src="img/Team2.png" alt="Abhishek Shah">
 							</div>
 							<div class="team-bottom">
 								<!-- Team content -->
@@ -378,6 +437,129 @@
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/abhishek-shah-06310261" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#" data-toggle="modal" data-target="#infoModalTeam2"><i class="fa fa-info"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Modal -->
+							<div class="modal fade" id="infoModalTeam2" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Abhishek Shah</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>
+									Abhishek is having more than 10 years having wide experience in book keeping in softwares like Xero, tally ERP, Tally prime and Quickbooks. Indirect tax advisory and compliance services, advising in Project finance and loan syndication.
+								<br/>
+									Abhishek has assisted many small businesses analyzing their financial data, ensuring accuracy, and providing valuable insights to businesses by guiding them on how to reduce their costs, structure their transaction and reap high margins. 
+								<br/>
+								He is certified concurrent auditor for banks and financial institutions. He has worked on audits of top notch industries so far which includes FMCG, construction companies, manufacturing industries, steel and hardware traders, textile retail and e-commerce.
+								</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>
+						<!-- End Single Team -->
+					</div>
+					<!-- Single-Team -->
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-duration="3s">
+						<!-- Single Team -->
+						<div class="single-team text-center">
+							<div class="team-img">
+								<img src="img/Team3.jpg" alt="Punit Falgunia">
+							</div>
+							<div class="team-bottom">
+								<!-- Team content -->
+								<div class="team-content">
+									<h4>Punit Falgunia</h4>
+									<p>Freelancer</p>
+								</div>
+								<!-- Team social -->
+								<div class="team-social">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/punit-falgunia-17562313" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#" data-toggle="modal" data-target="#infoModalTeam3"><i class="fa fa-info"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Modal -->
+							<div class="modal fade" id="infoModalTeam3" data-backdrop="static" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+							<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="infoModalLabel">Punit Falgunia</h5>
+									<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>
+									Punit Falgunia have over 15 years of experience and have worked with Deloitte Haskins and Sells LLP, PWC, and KPMG. He  provides comprehensive and customized solutions for businesses. He specializes in accounting, tax planning, financial reporting, and risk management. He has worked with various sectors such as banking, insurance, real estate, and hospitality. He has helped many businesses comply enhance their financial performance, transparency, and reliability by and managing risks. He has a strong analytical and problem-solving skills that enable him to address complex and challenging issues. He is a professional and a dependable partner for his clients and associates.    
+								</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+							</div>
+							</div>
+						<!-- End Single Team -->
+					</div>
+					<!-- Single-Team -->
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-duration="4s" style="display:none;">
+						<!-- Single Team -->
+						<div class="single-team text-center">
+							<div class="team-img">
+								<img src="https://via.placeholder.com/255x330" alt="#">
+							</div>
+							<div class="team-bottom">
+								<!-- Team content -->
+								<div class="team-content">
+									<h4>Anamika Dome</h4>
+									<p>Digital Marketer</p>
+								</div>
+								<!-- Team social -->
+								<div class="team-social">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Team -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-duration="1s" style="display:none;">
+						<!-- Single Team -->
+						<div class="single-team text-center">
+							<div class="team-img">
+								<img src="https://via.placeholder.com/255x330" alt="#">
+							</div>
+							<div class="team-bottom">
+								<!-- Team content -->
+								<div class="team-content">
+									<h4>Jonathon Will</h4>
+									<p>Article Writter</p>
+								</div>
+								<!-- Team social -->
+								<div class="team-social">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
 									</ul>
@@ -387,17 +569,43 @@
 						<!-- End Single Team -->
 					</div>
 					<!-- Single-Team -->
-					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-duration="3s">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-duration="2s" style="display:none;">
 						<!-- Single Team -->
 						<div class="single-team text-center">
 							<div class="team-img">
-								<img src="img/Team3.jpg" alt="#">
+								<img src="https://via.placeholder.com/255x330" alt="#">
 							</div>
 							<div class="team-bottom">
 								<!-- Team content -->
 								<div class="team-content">
-									<h4>Punit Falgunia</h4>
-									<p>Freelancer</p>
+									<h4>Hipolika Noir</h4>
+									<p>Creative Designer</p>
+								</div>
+								<!-- Team social -->
+								<div class="team-social">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Team -->
+					</div>
+					<!-- Single-Team -->
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-duration="3s" style="display:none;">
+						<!-- Single Team -->
+						<div class="single-team text-center">
+							<div class="team-img">
+								<img src="https://via.placeholder.com/255x330" alt="#">
+							</div>
+							<div class="team-bottom">
+								<!-- Team content -->
+								<div class="team-content">
+									<h4>Ostadam Jonab</h4>
+									<p>SEO Expert</p>
 								</div>
 								<!-- Team social -->
 								<div class="team-social">
@@ -422,8 +630,8 @@
 							<div class="team-bottom">
 								<!-- Team content -->
 								<div class="team-content">
-									<h4>Anamika Dome</h4>
-									<p>Digital Marketer</p>
+									<h4>William Jack</h4>
+									<p>Developer, Designer</p>
 								</div>
 								<!-- Team social -->
 								<div class="team-social">
@@ -510,20 +718,20 @@
 								<h3 class="widget-title">Latest News</h3>
 								<div class="widget-post">
 									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+										<a href="#"><img src="img/news1.jpg" alt="News"></a>
 									</div>
 									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+										<h4><a href="https://emagazine.com/why-hiring-a-virtual-cfo-is-good-for-the-environment/" target="_blank">Why Hiring a Virtual CFO Is Good for the Environment</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2024</span>
 									</div>
 								</div>
 								<div class="widget-post">
 									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+										<a href="#"><img src="img/news2.jpg" alt="News"></a>
 									</div>
 									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+										<h4><a href="https://www.msn.com/en-us/money/other/how-to-find-the-best-tax-preparer-for-your-needs/ar-AA1vlXcF?ocid=BingNewsSerp" target="_blank">How to Find the Best Tax Preparer for Your Needs</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>8th December 2024</span>
 									</div>
 								</div>
 							</div>
