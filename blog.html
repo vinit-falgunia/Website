@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-	<head>
+		<head>
+		<style>
+	.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: calc(100vh - 340px) !important;
+    overflow-y: auto;
+}
+.modal-content {
+  height: auto !important;
+  max-height: calc(200vh - 340px) !important;
+}
+</style>
 		<!-- Meta Tag -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name='copyright' content='bonik'>
+		<meta name='copyright' content='ADvibooks'>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Site Title -->
-		<title>Bonik - Multipurpose Business & Digital Agency HTML Template</title>
+		<title>ADvibooks - Accounting And Financial Services</title>
 		
 		<!-- Fav Icon -->
-		<link rel="icon" type="img/favicon.png" href="img/favicon.png">
+		<link rel="icon" type="img/favicon.ico" href="img/favicon.ico">
 		
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet">   
@@ -48,7 +82,15 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->	
 	</head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BP223GRG1T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-BP223GRG1T');
+</script>
 	<body>
 	<!--[if IE]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -77,9 +119,9 @@
 					<div class="col-lg-8 offset-lg-2 col-12">
 						<div class="topbar-address">
 							<ul>
-								<li><a href="#"><i class="fa fa-phone"></i><span>Phone:</span> +0123456789</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i><span>Email:</span> info@example.com</a></li>
-								<li><a href="#"><i class="fa fa-map-marker"></i><span>Location:</span> 28/A Street, The king city, USA </a></li>
+								<li><a href="#"><i class="fa fa-phone"></i><span>Phone:</span> +91 9624682524</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i><span>Email:</span> info@advibooks.com</a></li>
+								<li><a href="#"><i class="fa fa-map-marker"></i><span>Location:</span> Ahmedabad, Gujarat India  </a></li>
 							</ul>
 						</div>
 					</div>
@@ -99,7 +141,7 @@
 									<div class="col-lg-2 col-md-3 col-12">
 										<!-- Logo -->
 										<div class="logo">
-											<a class="logo-1" href="index.html"><img src="img/main-logo.png" alt="#"></a>
+											<a class="logo-1" href="index.html"><img src="img/logo.png" alt="#"></a>
 										</div>
 										<!-- End-Logo -->
 										<div class="mobile-nav"></div>
@@ -113,30 +155,10 @@
 														<ul class="nav-menu mobile-menu navigation">
 															<li class="active"><a href="index.html">Home</a></li>
 															<li><a href="services.html">Services</a></li>
-															<li><a href="#">Portfolio<i class="fa fa-angle-down"></i></a>
-																<ul class="sub-menu">
-																	<li><a href="portfolio.html">Portfolio</a></li>
-																	<li><a href="portfolio-single.html">Portfolio Single</a></li>
-																</ul>
-															</li>
-															<li><a href="#">Blogs<i class="fa fa-angle-down"></i></a>
-																<ul class="sub-menu">
-																	<li><a href="blog.html">Blog Archive</a></li>
-																	<li><a href="blog-sidebar.html">Blog With Sidebar</a></li>
-																	<li><a href="blog-single.html">Blog Single</a></li>
-																</ul>
-															</li>
-															<li><a href="#">Pages<i class="fa fa-angle-down"></i></a>
-																<ul class="sub-menu">
-																	<li><a href="about-us.html">About Us</a></li>
-																	<li><a href="team.html">Team</a></li>
-																	<li><a href="pricing.html">Pricing</a></li>
-																	<li><a href="testimonials.html">Testimonials</a></li>
-																	<li><a href="faq.html">Faq's</a></li>
-																	<li><a href="404.html">404 Page</a></li>
-																	<li><a href="mail-success.html">Mail Success</a></li>
-																</ul>
-															</li>
+															<li><a href="team.html">Team</a></li>
+															<li><a href="about-us.html">About Us</a></li>
+															<!--<li><a href="testimonials.html">Testimonials</a></li>-->
+															<!--<li><a href="faq.html">Faq's</a></li>-->
 															<li><a href="contact.html">Contact</a></li>
 														</ul>
 													</div>
@@ -159,14 +181,14 @@
 		<!-- End Header -->
 	
 		<!-- Breadcrumbs -->
-		<div class="breadcrumbs" style="background-image:url('https://via.placeholder.com/1600x500')">
+		<div class="breadcrumbs" style="background-image:url('img/breadcrumbs-bg.jpg')">
 			<div class="container">
 				<div class="row">
 					<!-- Breadcrumbs-Content -->
 					<div class="col-lg-7 col-md-7 col-12">
 						<div class="breadcrumbs-content">
 							<h2>Blog Area</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	
+							<p>Explore the world of accounting and finance with expert insights on financial management, reporting, and investment strategies. Our blog provides tips, trends, and advice to help you navigate financial decisions. Stay ahead with practical knowledge to boost your financial skills..</p>	
 						</div>
 					</div>
 					<!-- Breadcrumbs-Menu -->
@@ -174,7 +196,7 @@
 						<div class="breadcrumbs-menu">
 							<ul>
 								<li><a href="index.html">Home</a><i class="fa fa-angle-double-right"></i></li>
-								<li class="active"><a href="blog-grid.html">Blog grid</a></li>
+								<li class="active"><a href="blog.html">Blog</a></li>
 							</ul>
 						</div>	
 					</div>
@@ -390,18 +412,18 @@
 							<div class="single-widget footer-about">
 								<div class="footer-logo">
 									<a class="logo" href="#">
-										<img src="img/footer-logo.png" alt="#">
+										<img src="img/logo.png" alt="#">
 									</a>
 								</div>
 								<div class="about-description">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+									<p>We are dedicated to providing exceptional accounting and financial services that empower businesses and individuals to thrive..</p>
 								</div>
 								<!-- Quick Link Box -->	
 								<div class="f-contact-box">
 									<div class="box-icon"><i class="fa fa-headphones"></i></div>
 									<div class="contact-text">
 										<p>Talk To Our Support</p>
-										<h5>1-322-344-888</h5>
+										<h5>+91 9624682524</h5>
 									</div>
 								</div>
 							</div>
@@ -412,11 +434,9 @@
 							<div class="single-widget f-links">
 								<h3 class="widget-title">Quick Links</h3>
 								<ul>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>About us</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Our Services</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Creative Portfolio</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Our Pricing</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Contact us</a></li>
+									<li><a href="about-us.html"><i class="fa fa-angle-double-right"></i>About us</a></li>
+									<li><a href="services.html"><i class="fa fa-angle-double-right"></i>Our Services</a></li>
+									<li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact us</a></li>
 								</ul>
 							</div>
 						</div>
@@ -427,20 +447,20 @@
 								<h3 class="widget-title">Latest News</h3>
 								<div class="widget-post">
 									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+										<a href="#"><img src="img/news1.jpg" alt="News"></a>
 									</div>
 									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+										<h4><a href="https://emagazine.com/why-hiring-a-virtual-cfo-is-good-for-the-environment/" target="_blank">Why Hiring a Virtual CFO Is Good for the Environment</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2024</span>
 									</div>
 								</div>
 								<div class="widget-post">
 									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+										<a href="#"><img src="img/news2.jpg" alt="News"></a>
 									</div>
 									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+										<h4><a href="https://www.msn.com/en-us/money/other/how-to-find-the-best-tax-preparer-for-your-needs/ar-AA1vlXcF?ocid=BingNewsSerp" target="_blank">How to Find the Best Tax Preparer for Your Needs</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>8th December 2024</span>
 									</div>
 								</div>
 							</div>
@@ -452,9 +472,9 @@
 								<!-- Footer Contact -->
 								<div class="footer-contact">
 									<ul class="contact-bottom">
-										<li><a href="#"><i class="fa fa-map-marker"></i>28/A Street, The king city, USA</a></li>
-										<li><a href="#"><i class="fa fa-phone"></i>+0123456789</a></li>
-										<li><a href="#"><i class="fa fa-envelope"></i>info@example.com</a></li>
+										<li><a href="#"><i class="fa fa-map-marker"></i>Ahmedabad, Gujarat India</a></li>
+										<li><a href="#"><i class="fa fa-phone"></i>+91 9624682524</a></li>
+										<li><a href="#"><i class="fa fa-envelope"></i>info@advibooks.com</a></li>
 									</ul>
 								</div>
 								<!-- Footer Social -->
@@ -479,10 +499,10 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-12">
 							<div class="copyright-text">
-								<p>Copyright © 2020 Bonik. Design by <a href="#">ThemeShiper</a></p>
+								<p>Copyright © 2024 ADvibooks Pvt Ltd.</p>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-12">
+						<div class="col-lg-6 col-md-6 col-12" style="display:none;">
 							<div class="footer-bottom-img text-right">
 								<img src="img/payment-img.png" alt="#">
 							</div>

@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 	<head>
+		<style>
+	.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: calc(100vh - 340px) !important;
+    overflow-y: auto;
+}
+.modal-content {
+  height: auto !important;
+  max-height: calc(200vh - 340px) !important;
+}
+
+ul > li {
+    margin-left: 20px;
+}
+
+od > li {
+	margin-left: 20px;
+}
+</style>
 		<!-- Meta Tag -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name='copyright' content='bonik'>
+		<meta name='copyright' content='ADvibooks'>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Accounting, Book Keeping, Virtual CFO,Outsourcing, Tax Preparer, Gujarat, Ahmedabad">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Site Title -->
-		<title>Bonik - Multipurpose Business & Digital Agency HTML Template</title>
+		<title>ADvibooks - Accounting And Financial Services</title>
 		
 		<!-- Fav Icon -->
-		<link rel="icon" type="img/favicon.png" href="img/favicon.png">
+		<link rel="icon" type="img/favicon.ico" href="img/favicon.ico">
 		
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet">   
@@ -48,7 +91,15 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->	
 	</head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BP223GRG1T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-BP223GRG1T');
+</script>
 	<body>
 	<!--[if IE]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -77,9 +128,9 @@
 					<div class="col-lg-8 offset-lg-2 col-12">
 						<div class="topbar-address">
 							<ul>
-								<li><a href="#"><i class="fa fa-phone"></i><span>Phone:</span> +0123456789</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i><span>Email:</span> info@example.com</a></li>
-								<li><a href="#"><i class="fa fa-map-marker"></i><span>Location:</span> 28/A Street, The king city, USA </a></li>
+								<li><a href="#"><i class="fa fa-phone"></i><span>Phone:</span> +91 9624682524</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i><span>Email:</span> info@advibooks.com</a></li>
+								<li><a href="#"><i class="fa fa-map-marker"></i><span>Location:</span> Ahmedabad, Gujarat India  </a></li>
 							</ul>
 						</div>
 					</div>
@@ -99,7 +150,7 @@
 									<div class="col-lg-2 col-md-3 col-12">
 										<!-- Logo -->
 										<div class="logo">
-											<a class="logo-1" href="index.html"><img src="img/main-logo.png" alt="#"></a>
+											<a class="logo-1" href="index.html"><img src="img/logo.png" alt="#"></a>
 										</div>
 										<!-- End-Logo -->
 										<div class="mobile-nav"></div>
@@ -111,32 +162,13 @@
 													<div class="nav-item">
 														<!-- Main-Menu -->
 														<ul class="nav-menu mobile-menu navigation">
-															<li class="active"><a href="index.html">Home</a></li>
+															<li><a href="index.html">Home</a></li>
 															<li><a href="services.html">Services</a></li>
-															<li><a href="#">Portfolio<i class="fa fa-angle-down"></i></a>
-																<ul class="sub-menu">
-																	<li><a href="portfolio.html">Portfolio</a></li>
-																	<li><a href="portfolio-single.html">Portfolio Single</a></li>
-																</ul>
-															</li>
-															<li><a href="#">Blogs<i class="fa fa-angle-down"></i></a>
-																<ul class="sub-menu">
-																	<li><a href="blog.html">Blog Archive</a></li>
-																	<li><a href="blog-sidebar.html">Blog With Sidebar</a></li>
-																	<li><a href="blog-single.html">Blog Single</a></li>
-																</ul>
-															</li>
-															<li><a href="#">Pages<i class="fa fa-angle-down"></i></a>
-																<ul class="sub-menu">
-																	<li><a href="about-us.html">About Us</a></li>
-																	<li><a href="team.html">Team</a></li>
-																	<li><a href="pricing.html">Pricing</a></li>
-																	<li><a href="testimonials.html">Testimonials</a></li>
-																	<li><a href="faq.html">Faq's</a></li>
-																	<li><a href="404.html">404 Page</a></li>
-																	<li><a href="mail-success.html">Mail Success</a></li>
-																</ul>
-															</li>
+															<li><a href="team.html">Team</a></li>
+															<li class="active"><a href="blog-single.html">Blog</a></li>
+															<li><a href="about-us.html">About Us</a></li>
+															<!--<li><a href="testimonials.html">Testimonials</a></li>-->
+															<!--<li><a href="faq.html">Faq's</a></li>-->
 															<li><a href="contact.html">Contact</a></li>
 														</ul>
 													</div>
@@ -159,14 +191,14 @@
 		<!-- End Header -->
 	
 		<!-- Breadcrumbs -->
-		<div class="breadcrumbs" style="background-image:url('https://via.placeholder.com/1600x500')">
+		<div class="breadcrumbs" style="background-image:url('img/breadcrumbs-bg.jpg')">
 			<div class="container">
 				<div class="row">
 					<!-- Breadcrumbs-Content -->
 					<div class="col-lg-7 col-md-7 col-12">
 						<div class="breadcrumbs-content">
-							<h2>Blog Single</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	
+							<h2>Blog</h2>
+							<p>Explore the world of accounting and finance with expert insights on financial management, reporting, and investment strategies. Our blog provides tips, trends, and advice to help you navigate financial decisions. Stay ahead with practical knowledge to boost your financial skills.</p>	
 						</div>
 					</div>
 					<!-- Breadcrumbs-Menu -->
@@ -174,7 +206,7 @@
 						<div class="breadcrumbs-menu">
 							<ul>
 								<li><a href="index.html">Home</a><i class="fa fa-angle-double-right"></i></li>
-								<li class="active"><a href="blog-single.html">Blog Single</a></li>
+								<li class="active"><a href="blog-single.html">Blog</a></li>
 							</ul>
 						</div>	
 					</div>
@@ -193,28 +225,205 @@
 								<div class="single-area">
 									<!-- Blog Head -->
 									<div class="single-head">
-										<img src="https://via.placeholder.com/670x400" alt="#">
+										<img src="img/blog-single.jpg" alt="#">
 										<div class="blog-title-meta">
 											<!-- Blog Meta -->
 											<div class="blog-meta">
-												<span><i class="fa fa-user"></i><a href="#">By Piklo D. Sindom</a></span>
-												<span><i class="fa fa-calendar"></i>05 June, 2019</span>
-												<span><i class="fa fa-comments"></i>30 comments</span>
+												<span><i class="fa fa-user"></i><a href="#">By Dipika A. Shah</a></span>
+												<span><i class="fa fa-calendar"></i>20 March, 2025</span>
+												<span style="display:none;"><i class="fa fa-comments"></i>30 comments</span>
 											</div>
-											<h1>We Provide any Kind of Business and Creative Consultant Solutions.</h1>
+											<h1>Introduction to Corporate Tax in the UAE.</h1>
 										</div>
 									</div>
 									<!-- Blog Content -->
 									<div class="single-content">
-										<p>All users on MySpace will know that there are millions of people out there. Every day besides so many people joining this community, there are many others who will be looking out for friends. This will mean that they are naturally looking out for good people who are interesting enough. For this, the profile has to be very interesting. on MySpace will know that there are millions. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata.</p>
-										<blockquote>
+										<p>The <b>United Arab Emirates (UAE)</b> introduced a <b>federal corporate tax (CT)</b> on <b>business profits</b> starting from <b>June 1, 2023</b>. This marks a significant shift from the UAE’s traditional status as a <b>tax-free business hub</b>. The introduction of corporate tax aligns the UAE with global tax standards, enhances its financial transparency, and helps combat tax evasion. CT will be applied across all the emirates.</p>
+										<p>Corporate tax is a form of direct tax levied on the net income or profit of corporations and other entities from their business. Corporate tax is governed by Federal Decree-Law No.60 of 2023 (PDF, 187 KB) Amending Certain Provisions of the Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses. </p>
+										<p>Businesses will become subject to UAE Corporate Tax from the beginning of their first financial year that starts on or after 1 June 2023.</p>
+										<p>Any company that adopts a fiscal year starting on 1 June 2023 and ending 31 May 2024  will be subject to CT starting 1 June 2023. The first tax return filing is likely to be due towards the end of 2024.</p>
+										<p>Any company that adopts a calendar year starting 1 January 2023 and ending 31 December 2023 will  be subject to CT starting 1 January 2024 and filing is likely to be due towards mid-2025. </p>
+										<blockquote style="display:none;">
 											<i class="fa fa-quote-left"></i>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing commodo.<p>
 											<span>- John V. Doe</span>
 										</blockquote>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+										<p><b>Key Features of UAE Corporate Tax</b></p>
+										<p>
+										<ol>
+											<li><b>Effective Date:</b> June 1, 2023 </li>
+											<li><b>Corporate Tax Rate:</b>
+											
+												<ul style="list-style:square";>
+													<li><b>0%</b> – On taxable income up to <b>AED 375,000</b> (to support small businesses and startups)</li>
+													<li><b>9%</b> – On taxable income exceeding <b>AED 375,000</b></li>
+													<li><b>a different tax rate</b>– For large multinational corporations meeting the <b>OECD’s Pillar Two</b> criteria (i.e., consolidated global revenue exceeding €750 million)</li>
+												</ul>
+											
+												<p>
+													<b>Corporate Tax Calculation Example</b>
+												</p>
+												<p>
+													<b>Example:</b>
+													<p>A mainland business earns AED 1,000,000 in net profit:</p>
+													<table border="1">
+													<tr>
+													<th>Taxable Income</th>
+													<th>Tax Rate</th>
+													<th>Tax Payable</th>
+													</tr>
+													<tr>
+													<td>First AED 375,000</td>
+													<td>0%</td>
+													<td>AED 0</td>
+													</tr>
+													<tr>
+													<td>Remaining AED 625,000</td>
+													<td>9%</td>
+													<td>AED 56,250</td>
+													</tr>
+													<tr>
+													<td>Total Tax Payable</td>
+													<td></td>
+													<td>AED 56,250</td>
+													</tr>
+													</table>
+												</p>
+											</li>
+											<li><b>Scope of Corporate Tax:</b>
+												<ul style="list-style:square">
+													<li>Applies to all businesses and commercial activities conducted within the UAE, except for: </li>
+														<ul style="list-style:square">
+															<li>Extraction of natural resources (taxed at the emirate level)</li>
+															<li>Certain qualifying free zone businesses (subject to specific conditions). free zone businesses (The UAE CT regime will continue to honour the CT incentives currently being offered to free zone businesses that comply with all regulatory requirements and that do not conduct business set up in the UAE’s mainland.)</li>
+														</ul>
+													<li>Foreign entities and individuals only if they conduct a trade or business in the UAE in an ongoing or regular manner</li>
+													<li>Banking operations. Foreign Banking sector, which has been operating under the Emirate level Bank tax decree will now be subject to the UAE Federal Tax Law</li>
+													<li>Businesses engaged in real estate management, construction, development, agency and brokerage activities.</li>
+												</ul>
+											</li>
+											<li><b>Exemptions:</b>
+												<ul style="list-style:square">
+													<li>Government entities and government-controlled companies</li>
+													<li>Businesses engaged in the extraction of natural resources are exempt from CT as these businesses will remain subject to the current Emirate level corporate taxation. Income from oil, gas, and natural resource extraction is taxed at the emirate level instead.</li>
+													<li>Charities and public benefit organizations (if registered)</li>
+													<li>Pension and social security funds</li>
+													<li>Investment funds (meeting regulatory requirements). Funds regulated under UAE law, including Real Estate Investment Trusts (REITs) and qualified investment funds.</li>
+													<li>Dividends and capital gains earned by a UAE business from its qualifying shareholdings will be exempt from CT.
+															Additionally, CT will not apply to:
+															<ul style="list-style:square">
+																<li>an individual earnings salary and other employment income, whether received from the public or the private sector; as long as the income generating activity does not require a commercial license. </li>
+																<li>interest and other income earned by an individual from bank deposits or saving schemes</li>
+																<li>a foreign investor’s income earned from dividends, capital gains, interest, royalties and other investment returns</li>
+																<li>investment in real estate by individuals in their personal capacity</li>
+																<li>dividends, capital gains and other income earned by individuals from owning shares or other securities in their personal capacity.</li>
+															</ul>
+													</li>
+												</ul>
+											</li>
+											<li><b>Foreign Tax Credits:</b>	
+												<ul style="list-style:square">
+													<li>Taxes paid in other jurisdictions can be credited against UAE corporate tax liabilities</li>
+												</ul>
+											</li>
+										</ol>
+										<p><b>Why Corporate Tax Was Introduced</b>
+											<ul style="list-style:square">
+												<li>To diversify government revenue beyond oil and natural resources</li>
+												<li>To align with global tax policies and avoid harmful tax practices</li>
+												<li>To establish a more sustainable and competitive business environment</li>
+											</ul>
+										</p>
+										<p><b>Impact on Free Zones</b>
+											<ul style="list-style:square">
+												<li>Businesses in designated free zones may continue to benefit from a 0% corporate tax rate if they: 
+													<ul style="list-style:square">
+														<li>Maintain adequate substance in the UAE</li>
+														<li>Derive income from transactions with businesses outside the UAE or within the same free zone</li>
+														<li>Comply with transfer pricing rules and other requirements</li>
+													</ul>
+												</li>
+											</ul>
+										</p>
+										<p><b>Transfer Pricing Rules</b>
+											<ul style="list-style:square">
+												<li>The UAE corporate tax law includes transfer pricing regulations based on the OECD guidelines</li>
+												<li>Businesses must maintain proper documentation and disclose related-party transactions.</li>
+												<li>Transaction thresholds: Snapshot of the the applicability and reporting requirements for transactions with “related parties” and “connected persons” are as follows:
+													<table border="1">
+														<tr>
+															<th>Particulars</th>
+															<th>Thresholds - Aggregate value of transactions</th>
+															<th>Transactions to be disclosed </th>
+														</tr>
+														<tr>
+															<td>Related Parties</td>
+															<td>AED 40 million</td>
+															<td>Exceeding AED 4 million per category
+																Category means transactions pertaining to Goods, Services, Intellectual property, Interest, Assets, Liabilities and Others </td>
+														</tr>
+														<tr>
+															<td>Connected Persons</td>
+															<td>Payment or benefit to at least one connected person exceeding AED 500,000</td>
+															<td>Payment or benefit provided</td>
+														</tr>
+													</table>
+												</li>
+											</ul>
+										</p>
+										<p><b>Who Needs to Register for UAE Corporate Tax?</b>
+											<ul style="list-style:square">
+												<li>All businesses, including those in free zones (even if they benefit from a 0% rate), must register for corporate tax.</li>
+												<li>Filing of tax returns is mandatory, even for businesses eligible for exemptions</li>
+											</ul>
+										</p>
+										<p><b>Entities Required to Register:</b>
+											<ol>
+												<li>Mainland companies
+												<li>Free zone companies (even if eligible for a 0% tax rate)
+												<li>Foreign companies with a permanent establishment (PE) in the UAE
+												<li>Partnerships and joint ventures conducting business in the UAE
+												<li>Individuals conducting business activity that meets the tax threshold
+											</ol>
+										</p>
+										<p><b>Corporate Tax Registration Timeline</b>
+											<ul style="list-style:square">
+												<li>Businesses that began operations before June 1, 2023 must register by the deadlines set by the Federal Tax Authority (FTA).
+												<li>Newly established businesses must register within three months of incorporation.
+											</ul>
+										</p>
+										<p><b>Corporate Tax Return Filing Requirements</b>
+											<ol>
+											<li>Annual Filing:
+												<ul style="list-style:square">
+													<li>All taxable businesses must file a corporate tax return once per financial year.
+													<li>Filing is due 9 months after the end of the financial year.
+													<li>Example: If the financial year ends on December 31, 2024, the tax return is due by September 30, 2025.
+												</ul>
+											</li>
+											<li>Supporting Documents:
+												<ul style="list-style:square">
+													<li>Audited financial statements (if applicable)
+													<li>Transfer pricing documentation (if applicable)
+													<li>Disclosure of related-party transactions
+												</ul>
+											</li>
+											<li>Payment:
+												<ul style="list-style:square">
+													<li>The corporate tax liability is due at the time of filing.</li>
+												</ul>
+											</li>
+											</ol>
+											</p>
+											<p><b>Key Takeaways</b>
+												<ul style="list-style:square">
+													<li>Register for corporate tax, even if exempt
+													<li>File annual returns within 9 months of the financial year-end. 
+													<li>Comply with transfer pricing and related-party disclosure rules.
+													<li>Free zone businesses can maintain a 0% rate if they meet the conditions.
+												</ul>
+											<p>
+										</p>
 										<!-- Blog Post Tag -->
 										<div class="blog-post-tag">
 											<div class="row">
@@ -222,13 +431,13 @@
 													<div class="post-tag share-tag">
 														<h5>Releted Tags</h5>
 														<ul>
-															<li><a href="#">popular</a></li>
-															<li><a href="#">design</a></li>
-															<li><a href="#">ux</a></li>
+															<li><a href="#">UAE</a></li>
+															<li><a href="#">Corporate Tax</a></li>
+															<li style="display:none;"><a href="#">Return Filing</a></li>
 														</ul>
 													</div>
 												</div>
-												<div class="col-lg-4 col-md-4 col-12">
+												<div class="col-lg-4 col-md-4 col-12" style="display:none;">
 													<div class="blog-share share-tag">
 														<h5>Share Now</h5>
 															<ul>
@@ -242,7 +451,7 @@
 											</div>
 										</div>
 										<!-- Prev Next Button-->
-										<div class="prev-next-btn">
+										<div class="prev-next-btn" style="display:none;">
 											<ul>
 												<li class="prev"><i class="fa fa-angle-double-left"></i><a href="#">prev</a></li>
 												<li><a href="#">next</a><i class="fa fa-angle-double-right"></i></li>
@@ -250,7 +459,7 @@
 										</div>
 									</div>	
 									<!-- Author -->
-									<div class="post-author-box">
+									<div class="post-author-box" style="display:none;">
 										<div class="author-img">
 											<img src="https://via.placeholder.com/100x100" alt="#">
 										</div>
@@ -269,7 +478,7 @@
 									</div>
 									<!-- End-Author -->
 									<!-- Blog Comments -->
-									<div class="blog-comments">
+									<div class="blog-comments" style="display:none">
 										<div class="bottom-title">
 											<h2>Total <span>(03)</span> comments</h2>
 										</div>
@@ -316,7 +525,7 @@
 									<!--/ End Blog Comments -->
 								</div>
 							</div>
-							<div class="col-12">
+							<div class="col-12" style="display:none">
 								<!-- Comments Form -->
 								<div class="blog-c-form">
 									<div class="bottom-title">
@@ -362,7 +571,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-12">
+					<div class="col-lg-4 col-12" style="display:none">
 						<!-- Blog Sidebar -->
 						<div class="blog-sidebar">
 							<!-- Search Widget -->
@@ -464,7 +673,7 @@
 		<!--/ End Blogs Area -->
 		
 		<!-- Subscribe Area -->
-		<section class="subscribe-area" style="background-image: url(https://via.placeholder.com/1600x250);">
+		<section class="subscribe-area" style="background-image: url(https://via.placeholder.com/1600x250); display:none;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-12 wow fadeInLeft" data-wow-duration="1s">
@@ -495,18 +704,18 @@
 							<div class="single-widget footer-about">
 								<div class="footer-logo">
 									<a class="logo" href="#">
-										<img src="img/footer-logo.png" alt="#">
+										<img src="img/logo.png" alt="#">
 									</a>
 								</div>
 								<div class="about-description">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+									<p>We are dedicated to providing exceptional accounting and financial services that empower businesses and individuals to thrive..</p>
 								</div>
 								<!-- Quick Link Box -->	
 								<div class="f-contact-box">
 									<div class="box-icon"><i class="fa fa-headphones"></i></div>
 									<div class="contact-text">
 										<p>Talk To Our Support</p>
-										<h5>1-322-344-888</h5>
+										<h5>+91 9624682524</h5>
 									</div>
 								</div>
 							</div>
@@ -517,11 +726,9 @@
 							<div class="single-widget f-links">
 								<h3 class="widget-title">Quick Links</h3>
 								<ul>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>About us</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Our Services</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Creative Portfolio</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Our Pricing</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i>Contact us</a></li>
+									<li><a href="about-us.html"><i class="fa fa-angle-double-right"></i>About us</a></li>
+									<li><a href="services.html"><i class="fa fa-angle-double-right"></i>Our Services</a></li>
+									<li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact us</a></li>
 								</ul>
 							</div>
 						</div>
@@ -532,20 +739,20 @@
 								<h3 class="widget-title">Latest News</h3>
 								<div class="widget-post">
 									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+										<a href="#"><img src="img/news1.jpg" alt="News"></a>
 									</div>
 									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+										<h4><a href="https://emagazine.com/why-hiring-a-virtual-cfo-is-good-for-the-environment/" target="_blank">Why Hiring a Virtual CFO Is Good for the Environment</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2024</span>
 									</div>
 								</div>
 								<div class="widget-post">
 									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+										<a href="#"><img src="img/news2.jpg" alt="News"></a>
 									</div>
 									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
+										<h4><a href="https://www.msn.com/en-us/money/other/how-to-find-the-best-tax-preparer-for-your-needs/ar-AA1vlXcF?ocid=BingNewsSerp" target="_blank">How to Find the Best Tax Preparer for Your Needs</a></h4>
+										<span class="post-date"><i class="fa fa-clock-o"></i>8th December 2024</span>
 									</div>
 								</div>
 							</div>
@@ -557,9 +764,9 @@
 								<!-- Footer Contact -->
 								<div class="footer-contact">
 									<ul class="contact-bottom">
-										<li><a href="#"><i class="fa fa-map-marker"></i>28/A Street, The king city, USA</a></li>
-										<li><a href="#"><i class="fa fa-phone"></i>+0123456789</a></li>
-										<li><a href="#"><i class="fa fa-envelope"></i>info@example.com</a></li>
+										<li><a href="#"><i class="fa fa-map-marker"></i>Ahmedabad, Gujarat India</a></li>
+										<li><a href="#"><i class="fa fa-phone"></i>+91 9624682524</a></li>
+										<li><a href="#"><i class="fa fa-envelope"></i>info@advibooks.com</a></li>
 									</ul>
 								</div>
 								<!-- Footer Social -->
@@ -584,10 +791,11 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-12">
 							<div class="copyright-text">
-								<p>Copyright © 2020 Bonik. Design by <a href="#">ThemeShiper</a></p>
+							
+								<p>Copyright © <span id="spanyear"></span> ADvibooks Pvt Ltd.</p>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-12">
+						<div class="col-lg-6 col-md-6 col-12" style="display:none;">
 							<div class="footer-bottom-img text-right">
 								<img src="img/payment-img.png" alt="#">
 							</div>
@@ -598,6 +806,13 @@
 			<!-- End Footer Copyright -->
 		</footer>
 		<!-- End Footer Area -->	
+		<script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        
+        // Set the year in the span with id 'year'
+        document.getElementById("spanyear").textContent = currentYear;
+    </script>
 		
 		<!-- Jquery Plugin JS -->
 		<script src="js/jquery.min.js"></script>
